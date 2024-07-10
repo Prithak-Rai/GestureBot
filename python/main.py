@@ -5,8 +5,6 @@ import mediapipe as mp
 # Config
 write_video = True
 debug = False
-# cam_source = cv2.VideoCapture(0)
-# cam_source = "http://192.168.1.100:4747/video" # 0,1 for usb cam, "http://192.168.1.165:4747/video" for webcam
 
 if not debug:
     ser = serial.Serial('/dev/cu.usbserial-1120', 115200)
@@ -44,6 +42,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
 cap = cv2.VideoCapture(0)
+# cap = "http://192.168.1.100:4747/video" # 0,1 for usb cam, "http://192.168.1.165:4747/video" for webcam
 
 # Video writer
 if write_video:
