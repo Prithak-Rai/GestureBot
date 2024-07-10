@@ -37,6 +37,7 @@ servo_angle = [x_mid, y_mid, z_mid, claw_open_angle] # [x, y, z, claw]
 prev_servo_angle = servo_angle
 fist_threshold = 7
 
+
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
