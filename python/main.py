@@ -146,6 +146,7 @@ with mp_hands.Hands(model_complexity=0, min_detection_confidence=0.5, min_tracki
         if cv2.waitKey(5) & 0xFF == ord('q'):
             break
 
+# Release resources
 cap.release()
 if write_video:
     out.release()
