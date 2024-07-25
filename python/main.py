@@ -2,6 +2,7 @@ import serial
 import cv2
 import mediapipe as mp
 
+
 # Config
 write_video = True
 debug = False
